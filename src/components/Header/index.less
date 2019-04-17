@@ -1,0 +1,46 @@
+.header-top {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+  text-align: right;
+  background-color: #fff;
+  a {
+    margin-left: 40px;
+  }
+}
+
+.breadcrumb {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  border-top: 1px solid #f9c700;
+  background-color: #fff;
+  h1 {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 44%;
+      bottom: -8px;
+      width: 18px;
+      height: 18px;
+      background-color: #fff;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+  .weather {
+    text-align: right;
+    img {
+      height: 25px;
+      margin: 0 10px;
+    }
+    span {
+      vertical-align: middle;
+    }
+  }
+}
